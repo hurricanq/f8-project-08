@@ -19,7 +19,7 @@
     &__thumb {
         width: 116px;
         height: 116px;
-        object-fit: contain; // Cannot use object-fit: cover for items
+        object-fit: contain; /* Cannot use object-fit: cover for items */
         background: var(--cate-item-thumb-bg);
         border-radius: 8px;
 

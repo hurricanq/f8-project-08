@@ -9,14 +9,28 @@
     --top-act-group-shadow: rgba(237, 237, 246, 0.20);
     --top-act-group-separate: #EDEDF6;
 
-    @include abstracts.screen(lg) {
-        --header-bg-color: #FFF;
-    }
-
-    // Category Item
+    /* Category Item */
     --cate-item-bg: #EEE;
     --cate-item-thumb-bg: #FFF;
     --cate-item-title-color: #000;
+
+    /* Buttons */
+    --filter-btn-color: #6C6C72;
+    --filter-btn-bg: #FFF;
+
+    /* Product Card */
+    --product-card-bg: #FFF;
+    --product-card-shadow: rgba(237, 237, 246, 0.20);
+
+    --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    /* Footer */
+    --footer-bg: #EEE;
+
+    /* Nested rules should be declared after variables */
+    @include abstracts.screen(lg) {
+        --header-bg-color: #FFF;
+    }
 
     @include abstracts.screen(md) {
         --cate-item-bg: #FFF;
