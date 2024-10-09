@@ -12,4 +12,13 @@
     @include abstracts.screen(lg) {
         --header-bg-color: #FFF;
     }
+
+    // Category Item
+    --cate-item-bg: #EEE;
+    --cate-item-thumb-bg: #FFF;
+    --cate-item-title-color: #000;
+
+    @include abstracts.screen(md) {
+        --cate-item-bg: #FFF;
+    }
 }
