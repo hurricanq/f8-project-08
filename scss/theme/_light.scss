@@ -27,6 +27,9 @@
     /* Footer */
     --footer-bg: #EEE;
 
+    /* Auth */
+    --auth-content-bg: #FFF;
+
     /* Nested rules should be declared after variables */
     @include abstracts.screen(lg) {
         --header-bg-color: #FFF;
