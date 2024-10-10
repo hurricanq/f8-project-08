@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 :root .dark {
     --text-color: #FFF;
     --icon-color: brightness(0) saturate(100%) invert(81%) sepia(100%) saturate(1%) hue-rotate(241deg) brightness(108%) contrast(101%);
@@ -21,4 +23,17 @@
     
     /* Footer */
     --footer-bg: #171C28;
+
+    /* Auth */
+    --auth-content-bg: #292E39;
+    --auth-intro-bg: #171C28;
+    --auth-intro-text-color: #B9BABE;
+    --auth-heading-color: #B9BABE;
+
+    /* Form */
+    --form-placeholder-color: #B9BABE;
+
+    @include abstracts.screen(md) {
+        --auth-intro-bg: #FFF;
+    }
 }

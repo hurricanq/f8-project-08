@@ -1,6 +1,12 @@
+@use "../abstracts";
+
 .form {
     &__group {
         margin-top: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 20px;
+        }
 
         &--inline {
             display: flex;
@@ -19,6 +25,10 @@
         &:focus-within {
             border-color: #77DAE6;
         }
+
+        @include abstracts.screen(md) {
+            height: 48px;
+        }
     }
 
     &__input {
@@ -31,11 +41,15 @@
         line-height: 1.44444; /* 144.444% */
 
         &::placeholder {
-            color: #D2D1D6;
+            color: var(--form-placeholder-color);
         }
 
         &-icon {
             margin-left: 12px;
+        }
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
         }
     }
 
@@ -53,6 +67,10 @@
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.46667; /* 146.667% */
+
+            @include abstracts.screen(md) {
+                font-size: 1.4rem;
+            }
         }
     }
 }

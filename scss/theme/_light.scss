@@ -30,6 +30,9 @@
     /* Auth */
     --auth-content-bg: #FFF;
 
+    /* Form */
+    --form-placeholder-color: #D2D1D6;
+
     /* Nested rules should be declared after variables */
     @include abstracts.screen(lg) {
         --header-bg-color: #FFF;
@@ -37,5 +40,6 @@
 
     @include abstracts.screen(md) {
         --cate-item-bg: #FFF;
+        --auth-intro-bg: #FFF;
     }
 }
